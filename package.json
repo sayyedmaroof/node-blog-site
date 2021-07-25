@@ -1,0 +1,31 @@
+{
+  "name": "nodejs-blog-site",
+  "version": "1.0.0",
+  "description": "Create a blog using node.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "env-cmd -f ./config/dev.env nodemon index.js -e js,hbs"
+  },
+  "keywords": [
+    "blog"
+  ],
+  "author": "Sayyed Maroof",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^4.4.1",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.1",
+    "express-session": "^1.17.2",
+    "handlebars.moment": "^1.0.4",
+    "hbs": "^4.1.2",
+    "mongoose": "^5.13.2"
+  },
+  "devDependencies": {
+    "env-cmd": "^10.1.0",
+    "nodemon": "^2.0.12"
+  }
+}
